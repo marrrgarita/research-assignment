@@ -152,3 +152,15 @@ hash = { 1 => "a", 2 => "b", 3 => "c"}
 hash.has_value("d") #=> false
 
 #time
+# .now
+#
+# creates a new Time object for the current time
+#
+# argument: Time
+# returns: object
+#
+# ex:
+
+Time.now #=> yyyy-mm-dd hh-mm-ss
+
+#file
