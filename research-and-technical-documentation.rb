@@ -97,14 +97,14 @@ array.delete(2) #=> 2
 
 array.delete(9) {"not found"} #=> "not found"
 
-.pop
-
-removes the last element from the array and returns that element or nil if the element is empty.
-
-Can also specify n and it will remove n number of elements from the end of the list and return them in an array.
-
-argument: array (optional: n)
-returns: object, nil or array
+# .pop
+#
+# removes the last element from the array and returns that element or nil if the element is empty.
+#
+# Can also specify n and it will remove n number of elements from the end of the list and return them in an array.
+#
+# argument: array (optional: n)
+# returns: object, nil or array
 
 ex:
 
@@ -112,3 +112,43 @@ array = [1, 4, 6, 8, 3, 55, 6]
 array.pop #=> 6
 
 array.pop(2) #=> [55, 6]
+
+#hashes
+
+# .to_a
+#
+# converts the hash to an array, where each key-value pair is stored as an array within the array
+#
+# argument: Hash
+# return: array
+#
+# ex:
+
+hash = { 1 => "a", 2 => "b", 3 => "c"}
+hash.to_a #=> [[1, "a"], [2, "b"], [3, "c"]]
+
+# .has_key?
+#
+# checks if the hash has the specified key within it
+#
+# argument: hash, key
+# returns: boolean
+#
+# ex:
+
+hash = { 1 => "a", 2 => "b", 3 => "c"}
+hash.has_key?(2) #=> true
+
+# .has_value?
+#
+# checks if the hash has the specified value within it
+#
+# argument: hash, value
+# returns: boolean
+#
+# ex:
+
+hash = { 1 => "a", 2 => "b", 3 => "c"}
+hash.has_value("d") #=> false
+
+#time
