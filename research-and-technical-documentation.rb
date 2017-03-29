@@ -164,3 +164,25 @@ hash.has_value("d") #=> false
 Time.now #=> yyyy-mm-dd hh-mm-ss
 
 #file
+
+# .exist?
+#
+# checks if the file specified exists
+#
+# argument: file_name
+# returns: boolean
+#
+# ex:
+
+exist?("exercise1.rb") #=> false
+
+# .extname
+#
+# returns the extension of the file (whatever proceeds the . in the file name)
+#
+# argument: file_name
+# returns: string
+#
+# ex:
+
+File.extname("test.rb") #=> ".rb"
